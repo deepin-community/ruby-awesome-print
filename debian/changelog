@@ -1,0 +1,96 @@
+ruby-awesome-print (1.9.2-1) UNRELEASED; urgency=medium
+
+  * update
+
+ -- Debian Ruby Team <pkg-ruby-extras-maintainers@lists.alioth.debian.org>  Wed, 20 Jul 2022 15:58:40 +0800
+
+ruby-awesome-print (1.9.2-1) unstable; urgency=medium
+
+  * Team upload.
+  * New upstream release.
+    - Provides compatibility with Ruby 3.0 (closes: #996128).
+
+  [ Debian Janitor ]
+  * Set debhelper-compat version in Build-Depends.
+  * Set upstream metadata fields: Bug-Database, Bug-Submit, Repository,
+    Repository-Browse.
+
+  [ Daniel Leidert ]
+  * d/control (Standards-Version): Bump to 4.6.0.
+    (Build-Depends): Remove version constraint on rspec.
+    (Depends): Add ${ruby:Depends}.
+  * d/copyright: Add Upstream-Contact field.
+    (Copyright): Update and add team.
+  * d/rules: Use gem installation layout and install changelog.
+  * d/patches/fix_blue_integers.patch: Remove patch applied upstream.
+  * d/patches/fix_test_suite_ruby25.patch: Ditto.
+  * d/patches/fix_test_suite_rails52.patch: Ditto.
+  * d/patches/tests-remove-simplecov: Ditto.
+  * d/patches/0006-Skip-tests-failing-against-ruby2.7.patch: Ditto.
+  * d/patches/series: Adjust file.
+  * d/upstream/metadata: Fix YAML syntax and add Archive and Changelog fields.
+
+ -- Daniel Leidert <dleidert@debian.org>  Sun, 21 Nov 2021 04:04:50 +0100
+
+ruby-awesome-print (1.8.0-2) unstable; urgency=medium
+
+  * Team upload.
+
+  [ Utkarsh Gupta ]
+  * Add salsa-ci.yml
+
+  [ Lucas Kanashiro ]
+  * Add patch to skip failing tests against Ruby 2.7 (Closes: #952081)
+  * Bump debhelper compatibility level to 12
+  * Declare compliance with Debian Policy 4.5.0
+  * Remove runtime dependency on the Ruby interpreter
+  * d/control: rules does not require root
+  * Use autodep8 ruby tests instead of a hardcoded one
+
+ -- Lucas Kanashiro <lucas.kanashiro@canonical.com>  Tue, 10 Mar 2020 11:05:25 -0300
+
+ruby-awesome-print (1.8.0-1) unstable; urgency=medium
+
+  * Team upload.
+
+  [ Michael Moll ]
+  * B-D on ruby-nokogiri for tests
+
+  [ HIGUCHI Daisuke (VDR dai) ]
+  * Move Vcs-* to salsa.debian.org
+  * Bump debhelper compatibility level to 11
+  * eliminate lintian warning: insecure-copyright-format-uri
+  * update upstream homepage
+  * remove needless patches
+  * remove simplecov from tests
+  * refresh patch
+  * add ruby-activesupport to B-D:
+  * support autopkgtest-pkg-ruby
+
+  [ Cédric Boutillier ]
+  * Add upstream patches from newer ruby and rails
+  * Add upstream patch to fix integer colorization with Ruby2.5
+    (Closes: #888119)
+  * Bump Standards-Version to 4.3.0 (no changes needed)
+  * Move debian/watch to gemwatch.debian.net
+
+ -- Cédric Boutillier <boutil@debian.org>  Tue, 22 Jan 2019 12:28:22 +0100
+
+ruby-awesome-print (1.6.1-2) unstable; urgency=medium
+
+  * Team upload.
+  * Fix test failure under autopkgtest
+
+ -- Christian Hofstaedtler <zeha@debian.org>  Thu, 10 Sep 2015 00:45:26 +0000
+
+ruby-awesome-print (1.6.1-1) unstable; urgency=medium
+
+  * Import upstream version 1.6.1
+
+ -- Tim Potter <tpot@hp.com>  Tue, 11 Aug 2015 12:23:55 +1000
+
+ruby-awesome-print (1.2.0-1) unstable; urgency=medium
+
+  * Initial release (Closes: #711979)
+
+ -- Tim Potter <tpot@hp.com>  Tue, 14 Oct 2014 15:58:54 +1100

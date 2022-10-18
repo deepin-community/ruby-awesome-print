@@ -1,0 +1,29 @@
+Source: ruby-awesome-print
+Section: ruby
+Priority: optional
+Maintainer: Debian Ruby Team <pkg-ruby-extras-maintainers@lists.alioth.debian.org>
+Uploaders: Tim Potter <tpot@hp.com>
+Build-Depends: debhelper-compat (= 13),
+               gem2deb,
+               ruby-activesupport,
+               ruby-nokogiri,
+               ruby-rspec
+Standards-Version: 4.6.0
+Vcs-Git: https://salsa.debian.org/ruby-team/ruby-awesome-print.git
+Vcs-Browser: https://salsa.debian.org/ruby-team/ruby-awesome-print
+Homepage: https://github.com/awesome-print/awesome_print
+Testsuite: autopkgtest-pkg-ruby
+XS-Ruby-Versions: all
+Rules-Requires-Root: no
+
+Package: ruby-awesome-print
+Architecture: all
+XB-Ruby-Versions: ${ruby:Versions}
+Depends: ${misc:Depends},
+         ${ruby:Depends},
+         ${shlibs:Depends}
+Multi-Arch: foreign
+Description: pretty print Ruby objects with proper indentation and colors
+ Great Ruby dubugging companion: pretty print Ruby objects to
+ visualize their structure. It supports custom object formatting via
+ plugins.
